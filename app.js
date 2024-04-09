@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config()
 
 const app = express()
-const PORT = process.env.PORT 
+const PORT = process.env.PORT || 3000
 app.use('/', express.static('./www'))
 
 app.listen(PORT, () => console.log(`Servidor de frontend escuchando en puerto ${PORT}`))
