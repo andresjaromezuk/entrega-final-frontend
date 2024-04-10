@@ -131,7 +131,7 @@ window.addEventListener('load', async () => {
         })
     } else{
       alert("No tienes permiso para acceder a este recurso")
-      window.location.href = "/login.html"
+      window.location.href = "/login"
     }
 
 

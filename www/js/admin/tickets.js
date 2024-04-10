@@ -17,7 +17,7 @@ window.addEventListener('load', async () => {
                 <td>${ticket.amount}</td>
                 <td>${ticket.purchaser}</td>
                 <td>${ticket.purchase_datatime}</td>
-                <td><a href="/confirmation.html?${ticket._id}">Ver detalle</a></td>
+                <td><a href="/confirmation?${ticket._id}">Ver detalle</a></td>
              </tr>
             `
         });

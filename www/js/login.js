@@ -17,7 +17,7 @@ formLogin.addEventListener('submit', async e => {
   if (response.status === 201) {
     const {payload} = await response.json()
     document.cookie = `Authorization=${payload}; expires=Thu, 19 Dec 2024 12:00:00 UTC; path=/`
-    window.location.href = '/profile.html'
+    window.location.href = '/profile'
   } else {
     const error = await response.json()
     error_notification.innerHTML = `<div class="alert alert-danger" role="alert">${error.message}</div>`

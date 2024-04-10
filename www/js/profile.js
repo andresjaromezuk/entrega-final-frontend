@@ -40,7 +40,7 @@ window.addEventListener('load', async () => {
                         <th scope="row">${ticket.code}</th>
                         <td>${ticket.amount}</td>
                         <td>${ticket.purchase_datatime}</td>
-                        <td><a href="/confirmation.html?${ticket._id}">Ver detalle</a></td>
+                        <td><a href="/confirmation?${ticket._id}">Ver detalle</a></td>
                      </tr>
                     `
                 });
@@ -74,7 +74,7 @@ window.addEventListener('load', async () => {
     
             if(response_json.status === 200){
                 document.cookie = "Authorization=; expires=Thu, 19 Dec 2024 12:00:00 UTC; path=/"
-                window.location.href = '/login.html'
+                window.location.href = '/login'
             }
         })
     }

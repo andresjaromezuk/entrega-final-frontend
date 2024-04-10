@@ -94,7 +94,7 @@ function productDetail(product_id){
     const productsButton = document.querySelectorAll('#product-button')
     productsButton.forEach((productButton, index)=>{
         productButton.addEventListener('click', async ()=>{
-            window.location.href = `/product.html?product=${product_id[index]}`
+            window.location.href = `/product?product=${product_id[index]}`
         })
     })
 }

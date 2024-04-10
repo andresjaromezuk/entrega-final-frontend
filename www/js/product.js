@@ -50,10 +50,10 @@ window.addEventListener('load', async ()=>{
 })
 
 back_button.addEventListener('click', ()=>{
-    window.location.href = `/products.html`
+    window.location.href = `/products`
 })
 cart_button.addEventListener('click', ()=>{
-    window.location.href = `/cart.html`
+    window.location.href = `/cart`
 })
 
 
