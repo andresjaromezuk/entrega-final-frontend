@@ -20,6 +20,9 @@ app.use('/', express.static(path.join(__dirname, './www')))
 
 app.listen(PORT, () => console.log(`Servidor de frontend escuchando en puerto ${PORT}`))
 
+app.get('/', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'www', 'home.html'))
+})
 app.get('/login', (req, res)=>{
     res.sendFile(path.join(__dirname, 'www', 'login.html'))
 })
